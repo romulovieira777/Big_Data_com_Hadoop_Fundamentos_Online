@@ -1,0 +1,18 @@
+Sobre o material de apoio
+
+Caro(a) aluno(a),
+
+Para ajudá-lo(a) a reforçar os conhecimentos adquiridos neste curso, você dispõe de um material de apoio com o conjunto
+de arquivos utilizados nas videoaulas. Você pode baixar esse material na seção Material de apoio, para uso em seu
+computador.
+
+Como pré-requisito para acompanhamento do treinamento e dos exercícios realizados ao decorrer do conteúdo, é recomendado
+que seja efetuado previamente o download dos softwares sinalizados abaixo:
+
+VMware Workstation Player
+https://www.vmware.com/products/workstation-player/workstation-player-evaluation.html
+
+Selecione a versão Trial no final da página.
+
+MobaXTerm
+https://mobaxterm.mobatek.net/
