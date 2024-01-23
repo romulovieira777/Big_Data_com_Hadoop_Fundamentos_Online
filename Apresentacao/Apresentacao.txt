@@ -1,0 +1,15 @@
+Apresentação
+
+Bem-vindo!É um prazer tê-lo como aluno do nosso curso de introdução ao Hadoop.Este  curso é  indicado  para  você  que
+deseja  melhorar  suas  soluções  de Big  Data  coma  implementação  do  Hadoop,  o  framework  do  Apache utilizado
+para  o  processamento  distribuído  de  grandes  volumes  de dados.Você  estudará  a  origem do Hadoop  e  sua
+estrutura, incluindo  o uso  do  HDFS  (Hadoop  Distributed  File  System),  YARN  e  MapReduce. Também,  verá  como
+utilizar  o  HIVE para  processamento  e  análise  de conjuntos de dados. Bom aprendizado!
+
+Como estudar?
+
+Este curso conta com:
+
+Videoaulas  sobre  os  assuntos  que  você  precisa  saber  neste curso de Hadoop.
+Exercícios para você pôr à prova o que aprendeu.
+Material de apoio para você testar os exemplos das videoaulas.
