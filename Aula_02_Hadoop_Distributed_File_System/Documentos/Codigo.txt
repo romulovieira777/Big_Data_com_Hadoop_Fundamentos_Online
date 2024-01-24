@@ -1,0 +1,19 @@
+Inicializandoo Hadoop
+
+Após configurar as ferramentas que serão utilizadas durante o curso, conforme demonstrado na videoaula Configuração das
+ferramentas, o próximo passo é inicializar o Hadoop. Para isso, realize o seguinte procedimento:
+
+1. Abra um prompt de comando na máquina virtual;
+
+2. Execute o comando a seguir para confirmar que o Hadoop não está inicializado;
+/etc/impacta/hadoop/sbin/stop-all.sh
+
+3. Execute o comando a seguir para inicializar o namenode:
+hdfs namenode
+
+A saída deve ser a seguinte:
+
+4. Abra um novo prompt e execute o comandoa seguir para inicializar o Hadoop:
+/etc/impacta/hadoop/sbin/start-all.sh
+
+O resultado final é o seguinte, indicando que o Hadoop foi inicializado:

@@ -1,0 +1,1000 @@
+    3  sudo gedit /etc/profile.d/export.sh 
+    4  source /etc/profile.d/export.sh 
+    5  schematool -dbType mysql -info --verbose
+    6  hive --service hiveserver2
+    7  exit
+    8  ls -la /etc/alternatives/java
+    9  ls /usr/share/java
+   10  sudo yum install libmysql-java
+   11  cd /etc/impacta/
+   12  ls
+   13  cd sqoop/
+   14  ls
+   15  ccd src/
+   16  ls
+   17  cd src/
+   18  ls
+   19  cd ..
+   20  ls
+   21  cd spark/
+   22  ls
+   23  cd ..
+   24  ls
+   25  cd hbase/
+   26  ls
+   27  cd ..
+   28  cd sqoop/lib/
+   29  ls
+   30  vm mysql-connector-java-8.0.15 /etc/impacta/
+   31  mv mysql-connector-java-8.0.15 /etc/impacta/
+   32  cd ..
+   33  ls
+   34  cd mysql-connector-java-8.0.15/
+   35  ls
+   36  cp mysql-connector-java-8.0.15.jar /etc/impacta/hive/lib/
+   37  cd ..
+   38  cd hive/lib/
+   39  ls
+   40  mv mysql-connector-java-8.0.15.jar mysql-connector-java.jar 
+   41  ls
+   42  cd ..
+   43  cat $HIVE_HOME 
+   44  mysql -u root -p
+   45  exit
+   46  cd /etc/impacta/hue/desktop/
+   47  ls
+   48  ls -l
+   49  sudo chmod 777 *
+   50  ls -l
+   51  cd ..
+   52  ls
+   53  cd build/
+   54  ls
+   55  cd ..
+   56  cd apps/
+   57  ls
+   58  cd ..
+   59  cd desktop/conf.dist/
+   60  ls
+   61  sudo gedit hue.ini 
+   62  hdfs fs -ls /
+   63  hdfs -ls /
+   64  hdfs dfs -ls /
+   65  hdfs dfs -chown aluno:aluno /
+   66  hdfs dfs -ls /
+   67  hdfs dfs -chown -R aluno:aluno /
+   68  hdfs dfs -ls /
+   69  hdfs dfs -ls /user
+   70  hadoop fs -ls /
+   71  id admin
+   72  id aluno
+   73  cd /etc/impacta/hadoop/etc/
+   74  ls
+   75  cd hadoop/
+   76  ls
+   77  cd ..
+   78  ls
+   79  cd ..
+   80  ls
+   81  cd etc/
+   82  ls
+   83  cd hadoop/
+   84  ls
+   85  sudo gedit httpfs-env.sh 
+   86  sudo gedit core-site.xml 
+   87  ls
+   88  sudo gedit hdfs-site.xml 
+   89  groups $aluno
+   90  useradd aluno -g root
+   91  sudo useradd aluno -g root
+   92  id aluno
+   93  addgroup aluno hdfs
+   94  sudo addgroup aluno hdfs
+   95  usermod -m -G hdfs aluno
+   96  sudo usermod -m -G hdfs aluno
+   97  sudo usermod -m -G hadoop  aluno
+   98  id aluno
+   99  sudo usermod -m -G root  aluno
+  100  sudo usermod -G root  aluno
+  101  id aluno
+  102  sudo gedit hdfs-site.xml 
+  103  sudo gedit core-site.xml 
+  104  ls
+  105  pwd
+  106  sudo gedit hdfs-site.xml 
+  107  hdfs groups
+  108  cd ..
+  109  ls
+  110  cd ..
+  111   cd ..
+  112  ls
+  113  hue -version
+  114  hue --version
+  115  cd hue
+  116  ls
+  117  cd desktop/
+  118  ls
+  119  cd conf
+  120  ls
+  121  ls -l
+  122  sudo gedit pseudo-distributed.ini
+  123  cd /etc/impacta/hue/desktop/conf.dist/
+  124  ls
+  125  sudo gedit hue.ini 
+  126  pwd
+  127  cd ..
+  128  ls
+  129  cd conf
+  130  ls
+  131  sudo gedit pseudo-distributed.ini
+  132  ls /etc/impacta/hadoop/
+  133  cd /etc/impacta/hadoop/
+  134  cd etc/
+  135  ls
+  136  cd hadoop/
+  137  ls
+  138  sudo gedit hdfs-site.xml 
+  139  sudo gedit core-site.xml 
+  140  cd /etc/impacta/hue
+  141  ls
+  142  cd desktop/
+  143  ls
+  144  cd conf.dist/
+  145  ls
+  146  sudo gedit hue.ini 
+  147  start-hbase.sh 
+  148  sudo gedit hue.ini 
+  149  hive --service hiveserver2
+  150  sudo gedit hue.ini 
+  151  beeline
+  152  hive
+  153  cd /etc/impacta/hive/
+  154  ls
+  155  ls -l
+  156  cd lib/
+  157  ls
+  158  cd py/
+  159  ls
+  160  cd thrift/
+  161  ls
+  162  cd transport/
+  163  ls
+  164  cd ..
+  165  ls
+  166  cd ..
+  167  cd hue
+  168  ls
+  169  cd desktop/
+  170  ls
+  171  cd conf
+  172  ls
+  173  cat log.conf 
+  174  ls
+  175  sudo gedit pseudo-distributed.ini
+  176  date
+  177  timedatectl
+  178  beeline
+  179  beeline   -u   jdbc:hive2://
+  180  ls
+  181  sudo gedit pseudo-distributed.ini
+  182  hue runserver
+  183  start-all.sh 
+  184  hive
+  185  cd /etc/impacta/
+  186  sudo gedit hive/conf/hive-site.xml 
+  187  hive
+  188  beeline -u jdbc:hive2://
+  189  hive --service hiveserver2
+  190  stop-all.sh 
+  191  start-all.sh 
+  192  hive --service hiveserver2
+  193  stop-all.sh 
+  194  start-all.sh 
+  195  hive --service hiveserver2
+  196  stop-all.sh 
+  197  start-all.sh 
+  198  hive --service hiveserver2
+  199  stop-all.sh 
+  200  start-all.sh 
+  201  hive --service hiveserver2
+  202  stop-all.sh 
+  203  start-all.sh 
+  204  hive --service hiveserver2
+  205  hadoop dfsadmin -safemode leave
+  206  hive --service hiveserver2
+  207  rue runserver
+  208  hue runserver
+  209  cd /etc/impacta/
+  210  cd hue
+  211  ls
+  212  cd apps/
+  213  ls
+  214  cd beeswax/
+  215  ls
+  216  cd thrift/
+  217  ls
+  218  ls -l
+  219  cd ..
+  220  ls
+  221  cd src/
+  222  ls
+  223  cd beeswax
+  224  ls
+  225  cd server/
+  226  ls
+  227  cd ..
+  228  ls
+  229  cd ..
+  230  ls
+  231  cd data/
+  232  ls
+  233  cd ..
+  234  clear
+  235  ls
+  236  cd ..
+  237  ls
+  238  cd build/
+  239  ls
+  240  cd ..
+  241  cd desktop/
+  242  ls
+  243  cd conf
+  244  ls
+  245  cd ..
+  246  cd conf.dist/
+  247  ls
+  248  sudo gedit hue.ini 
+  249   gedit hue.ini 
+  250  cd ..
+  251  cd conf
+  252  ls
+  253  gedit pseudo-distributed.ini
+  254  hue runserver
+  255  hdfs dfs -stat "% u% g" /
+  256  hdfs dfs -stat "%u %g" /
+  257  cd /etc/impacta/hue
+  258  ls
+  259  cd desktop/
+  260  ls
+  261  cd ..
+  262  ls
+  263  cd build/env/bin/
+  264  ls
+  265  hue syncdb --noinput
+  266  hue migrate
+  267  cd /home/aluno/
+  268  ls
+  269  cd hive/
+  270  ls
+  271  cd ..
+  272  hdfs dfs -ls /user/hive
+  273  hdfs dfs -ls /user/hive/warehouse
+  274  hdfs dfs -ls /user/hive/warehouse/teste01
+  275  cd /etc/impacta/hive
+  276  ls
+  277  cd conf/
+  278  ls
+  279  gedit hive-site.xml 
+  280  cp hive-env.sh.template hive-env.sh
+  281  ls
+  282  gedit hive-env.sh
+  283  cd ..
+  284  cd hive.bk/
+  285  cd conf/
+  286  ls
+  287  gedit hive-env.sh
+  288  cd ..
+  289  cd hive/conf/
+  290  ls
+  291  gedit hive-env.sh
+  292  cd ..
+  293  ls
+  294  mv hive hive.bk2
+  295  hive --version
+  296  ls
+  297  ls /usr/share/java/
+  298  ln -s/usr/share/java/ /etc/impacta/hive/lib/mysql-connector-java.jar
+  299  ln -s /usr/share/java/ /etc/impacta/hive/lib/mysql-connector-java.jar
+  300  ls hive/lib/
+  301  ls
+  302  mv hive hive.3
+  303  vm hive.bk2 hive
+  304  mv hive.bk2 hive
+  305  ls
+  306  hive
+  307  ls
+  308  ls hive/bin
+  309  ls hive/lib
+  310  ls /usr/share/java/
+  311  ln -s /usr/share/java/mysql-connector-java.jar hive/lib/mysql-connector-java.jar
+  312  hive
+  313  ls
+  314  mv hive hive.novo
+  315  mv hive.bk hive
+  316  ls
+  317  hive
+  318  mvn -version
+  319  hdfs dfs -ls /user/hive/warehouse
+  320  hue runserver;
+  321  hue runserver
+  322  mysql -u root -p
+  323  hive
+  324  hive --service hiveserver2 
+  325  cd /etc/impacta/hue
+  326  ls
+  327  cd desktop/conf/
+  328  ls
+  329  cd ..
+  330  ls
+  331  cd conf/
+  332  ls
+  333  cp hue.ini hue.ini.bk
+  334  pwd
+  335  cd ..
+  336  ls
+  337  cd hue.bk
+  338  ls
+  339  cd desktop/
+  340  ls
+  341  cd conf
+  342  ls
+  343  gedit pseudo-distributed.ini
+  344  mysql -u root -p
+  345  hdfs dfs -ls /user/hive/
+  346  hdfs dfs -ls /user/hive/warehouse
+  347  hdfs dfs -rm /user/hive/warehouse/teste01
+  348  hdfs dfs -rmdir /user/hive/warehouse/teste01
+  349  hdfs dfs -rm /user/hive/warehouse/teste01.db
+  350  hdfs dfs -rmdir /user/
+  351  hdfs dfs -ls /user
+  352  hdfs dfs -rmdir /user/admin
+  353  hdfs dfs -rmdir /user/hdfs
+  354  hdfs dfs -rmdir /user/hue
+  355  cd ..
+  356  cd etc/impacta/
+  357  cd h
+  358  cd hadoop/
+  359  ls
+  360  cd etc/
+  361  ls
+  362  cd hadoop/
+  363  ls
+  364  gedit core-site.xml 
+  365  cd hi
+  366  cd hive
+  367  cd ..
+  368  cd hive
+  369  ls
+  370  cd conf/
+  371  ls
+  372  gedit hive-env.sh
+  373  gedit hive-site.xml 
+  374  cd ..
+  375  cd hue
+  376  ls
+  377  cd desktop/
+  378  ls
+  379  cd conf/
+  380  ls
+  381  gedit hue.ini
+  382  cd ..
+  383  ls hadoop/etc/hadoop/
+  384  gedit hadoop/etc/hadoop/core-site.xml 
+  385  hdfs dfs -stat "%u %g" /
+  386  ls hue/
+  387  ls hue/desktop/conf/
+  388  gedit hue/desktop/conf/hue.ini
+  389  hdfs dfs -ls /user
+  390  id gue
+  391  id hue
+  392  hdfs dfs -mkdir /user/
+  393  hdfs dfs -ls /user
+  394  hdfs dfs -chmod 777 /user/hue
+  395  adduser hue
+  396  su -
+  397  hdfs dfs -chown hue:hue /user/hue
+  398  hdfs dfs -ls /user
+  399  ls hadoop/etc/hadoop/
+  400  gedit  hadoop/etc/hadoop/core-site.xml 
+  401  top
+  402  gedit hive/conf/hive-site.xml 
+  403  ls hadoop/etc/hadoop/
+  404  gedit hadoop/etc/hadoop/core-site.xml 
+  405  service hive-metastore status
+  406  service hive-metastore start
+  407  gedit hadoop/etc/hadoop/core-site.xml 
+  408  gedit hadoop/etc/hadoop/hdfs-site.xml 
+  409  beeline -u jdbc:hive2://
+  410  hive
+  411  gedit hadoop/etc/hadoop/hdfs-site.xml 
+  412  gedit hadoop/etc/hadoop/core-site.xml 
+  413  gedit hive/conf/hive-site.xml 
+  414  beeline -u jdbc:hive2://
+  415  gedit hive/conf/hive-site.xml 
+  416  beeline -u jdbc:hive2://
+  417  gedit hive/conf/hive-site.xml 
+  418  python -c "import django; print django.get_version()"
+  419  python -version
+  420  python --version
+  421  python -m django --version
+  422  python3 -m django --version
+  423  gedit hive/conf/hive-site.xml 
+  424  gedit hadoop/etc/hadoop/core-site.xml 
+  425  gedit hadoop/etc/hadoop/hdfs-site.xml 
+  426  top
+  427  cd /etc/impacta/
+  428  ls
+  429  cd hue.bk
+  430  ls
+  431  cd desktop/
+  432  ls
+  433  cd conf.dist/
+  434  ls
+  435  cd ..
+  436  cd conf
+  437  ls
+  438  cp pseudo-distributed.ini /etc/impacta/hue/desktop/conf/hue.ini
+  439  ls
+  440  cd /etc/impacta/hue
+  441  ls
+  442  cd desktop/
+  443  ls
+  444  cd conf/
+  445  ls
+  446  cp hue.ini hue.ini.antigo
+  447  ls
+  448  rm hue.ini
+  449  ls
+  450  cp hue.ini.bk  hue.ini
+  451  gedit hue.ini
+  452  pwd
+  453  cd ..
+  454  hue runserver
+  455  beeline -u jdbc:hive2://
+  456  mysql -u root -p
+  457  exit
+  458  cd /etc/impacta/hue
+  459  ls
+  460  cd desktop/
+  461  ls
+  462  cd conf
+  463  ls
+  464  cd ..
+  465  cd conf.dist/
+  466  ls
+  467  gedit hue.ini 
+  468  cd ..
+  469  cd conf
+  470  ls
+  471  gedit pseudo-distributed.ini
+  472  cd ..
+  473  ls
+  474  cd hue2
+  475  ls
+  476  cd hue/
+  477  ls
+  478  cd ..
+  479  ls
+  480  cd elton/
+  481  ls
+  482  cd ..
+  483  ls
+  484  clear
+  485  ls
+  486  wget http://ftp.unicamp.br/pub/apache/hive/hive-3.1.1/apache-hive-3.1.1-bin.tar.gz
+  487  ls
+  488  tar -xzf apache-hive-3.1.1-bin.tar.gz 
+  489  mv apache-hive-3.1.1-bin hive
+  490  cd hive
+  491  ls
+  492  cd ..
+  493  hive --version
+  494  cd hive/conf/
+  495  ls
+  496  cp hive-env.sh.template hive-env.sh
+  497  ls
+  498  gedit hive-env.sh
+  499  cp /etc/impacta/hive.bk2/conf/hive-site.xml hive-site.xml
+  500  ls
+  501  gedit hive-site.xml 
+  502  beeline   -u   jdbc:hive2://
+  503  gedit hive-site.xml 
+  504  beeline   -u   jdbc:hive2://
+  505  clear
+  506  beeline   -u   jdbc:hive2://
+  507  gedit hive-site.xml 
+  508  beeline   -u   jdbc:hive2://
+  509  hive --version
+  510  hive
+  511  cd ..
+  512  ls
+  513  mv hue hue.bk
+  514  ls
+  515  git clone https://github.com/cloudera/hue.git
+  516  ls
+  517  cd hue
+  518  make apps
+  519  cd ..
+  520  rm -rf hue
+  521  ls
+  522  tar -xvf hue-4.4.0.tgz 
+  523  ls
+  524  mv hue-4.4.0 hue
+  525  ls
+  526  cd hue
+  527  ls
+  528  clear
+  529  hue runserver
+  530  cd ..
+  531  gedit /etc/profile.d/export.sh 
+  532  cd hue
+  533  ls
+  534  make apps
+  535  cd ..
+  536  ls
+  537  rm -rf hue
+  538  ls
+  539  clear
+  540  ls
+  541  tar -xvf hue-4.2.0.tgz 
+  542  cd hue
+  543  ls
+  544  mv hue-4.2.0 hue
+  545  cd hue
+  546  ls
+  547  make apps
+  548  hue runserver
+  549  ls
+  550  cd ..
+  551  ls
+  552  ls hue.bk/
+  553  cd hue
+  554  ls
+  555  cd build/env/
+  556  ls
+  557  cd bin/
+  558  ls
+  559  cd ..
+  560  cd hue
+  561  ls
+  562  cd ..
+  563  cd hue.bk/
+  564  cd build/env/bin/
+  565  ls
+  566  cd ..
+  567  ls
+  568  rm -rf hue
+  569  tar -xvf hue-4.3.0.tgz 
+  570  ls
+  571  tar -xvf hue-4.3.0.tgz 
+  572  ls
+  573  vm hue-4.3.0 hue
+  574  mv hue-4.3.0 hue
+  575  cd hue
+  576  ls
+  577  make apss
+  578  make apps
+  579  cd ..
+  580  rm -rf hue
+  581  ls
+  582  tar -vzxf hue-4.4.0.tgz 
+  583  ls
+  584  mv hue-4.4.0 hue
+  585  cd hue
+  586  make apps
+  587  cd ..
+  588  ls
+  589  tar -vzxf hue-4.3.0.tgz 
+  590  ls
+  591  tar -vzxf hue-4.2.0.tgz 
+  592  ls
+  593  cd hue-4.2.0/
+  594  ls
+  595  make apps
+  596  ls
+  597  cd build/env/bin/
+  598  ls
+  599  hue runserver
+  600  cd ..
+  601  ls
+  602  cd hue
+  603  s
+  604  ls
+  605  cd ..
+  606  mv hue hue.bk2
+  607  mv hue-4.2.0 hue
+  608  hue runserver
+  609  cd hue
+  610  make apps
+  611  hue runserver
+  612  beeline   -u   jdbc:hive2://
+  613  cd ..
+  614  hue runserver
+  615  cd hue
+  616  make apps
+  617  hue runserver
+  618  yum install cyrus-sasl-plain cyrus-sasl-gssapi
+  619  sudo yum install cyrus-sasl-plain cyrus-sasl-gssapi
+  620  su -
+  621  hue runserver
+  622  exit
+  623  hive --version
+  624  cd /etc/impacta/hive/
+  625  ls
+  626  cd conf/
+  627  ls
+  628  sudo gedit hive-site.xml 
+  629  gedit hive-site.xml 
+  630  hive --version
+  631  cd ..
+  632  cd bin
+  633  ls
+  634  schematool -dbType mysql -initSchema
+  635  schematool -dbType mysql -initSchema -v
+  636  schematool -dbType mysql -initSchema -verbose
+  637  ls
+  638  cd ..
+  639  cd conf/
+  640  gedit hive-site.xml 
+  641  start-all.sh 
+  642  cd ..
+  643  ls
+  644  cd bin
+  645  ls
+  646  schematool -dbType mysql -initSchema
+  647  mysql -u root -p
+  648  schematool -dbType mysql -initSchema
+  649  hive -e "show tables;"
+  650  hdfs dfs -l /
+  651  hdfs dfs -ls /
+  652  hdfs dfs -ls /user
+  653  hdfs dfs -ls /user/hive
+  654  hdfs dfs -ls /user/hive/warehouse
+  655  hive
+  656  beeline
+  657  beeline   -u   jdbc:hive2://  
+  658  hive
+  659  cd ..
+  660  ls
+  661  mv hive hive.bk
+  662  ls
+  663  ls -l
+  664  tar -xvf apache-hive-2.3.5-bin.tar.gz 
+  665  ls -l
+  666  mv apache-hive-2.3.5-bin hive
+  667  ls 
+  668  ls -l
+  669  cd hive
+  670  cd conf/
+  671  ls
+  672  cd ..
+  673  cd hive.bk/
+  674  cd conf/
+  675  ls
+  676  cp hive-site.xml /etc/impacta/hive/conf/
+  677  cd ..
+  678  cd hive
+  679  cd conf/
+  680  ls
+  681  gedit hive-site.xml 
+  682  cd ..
+  683  ls
+  684  ls /usr/share/java/
+  685  ln -s /usr/share/java/mysql-connector-java.jar hive/lib/mysql-connector-java.jar
+  686  mysql -u root -p
+  687  hive --service hiveserver2
+  688  stop-all.sh 
+  689  start-all.sh 
+  690  hive --service hiveserver2
+  691  stop-all.sh 
+  692  start-all.sh 
+  693  hive --service hiveserver2
+  694  stop-all.sh 
+  695  start-all.sh 
+  696  hive --service hiveserver2
+  697  stop-all.sh 
+  698  start-all.sh 
+  699  hive --service hiveserver2
+  700  stop-all.sh 
+  701  start-all.sh 
+  702  hive --service hiveserver2
+  703  hive --service hiveserver2 stop
+  704  stop-all.sh 
+  705  start-all.sh 
+  706  hive --service hiveserver2
+  707  stop-all.sh 
+  708  start-all.sh 
+  709  hive --service hiveserver2
+  710  hive --service hiveserver2 -v
+  711  hive --service hiveserver2 -verbose
+  712  hive --service hiveserver2 --verbose
+  713  stop-all.sh 
+  714  start-all.sh 
+  715  hive --service hiveserver2
+  716  stop-all.sh 
+  717  start-all.sh 
+  718  hive --service hiveserver2
+  719  hive --service hiveserver2 --hiveconf hive.server2.thrift.port=10000 --hiveconf hive.root.logger=INFO
+  720  hive --service hiveserver2 --hiveconf hive.server2.thrift.port=10000 -
+  721  clear
+  722  hive --service hiveserver2 --hiveconf hive.server2.thrift.port=10000
+  723  hive --service hiveserver2
+  724  stop-all.sh 
+  725  start-all.sh 
+  726  hive --service hiveserver2
+  727  sudo service status hiveserver2
+  728  service status hiveserver2
+  729  service hiveserver2 status
+  730  cd /etc/impacta/hive/lib/
+  731  ls
+  732  ls /home/aluno/Documents/
+  733  cp /home/aluno/Documents/log4j-slf4j-impl-2.6.2.jar /etc/impacta/hive/lib/
+  734  ls
+  735  cd ..
+  736  ls
+  737  cd conf/
+  738  ls
+  739  gedit hive-env.sh
+  740  ls
+  741  cd ..
+  742  ls
+  743  gedit conf/hive-env.sh
+  744  ls conf/
+  745  gedit conf/hive-site.xml 
+  746  cd ..
+  747  gedit hadoop/etc/hadoop/core-site.xml 
+  748  mysql -u root -p
+  749  usermod -aG wheel 154
+  750  id aluno
+  751  usermod -aG wheel aluno
+  752  sudo usermod -aG wheel aluno
+  753  su -
+  754  hdfs dfs -ls /users
+  755  hdfs dfs -ls /user
+  756  hdfs dfs -chown aluno:aluno /user/h
+  757  hdfs dfs -ls /user/hive
+  758  hdfs dfs -ls /user/hive/warehouse
+  759  hue runserver
+  760  beeline   -u   jdbc:hive2://
+  761  mysql -u root -p
+  762  cd /etc/impacta/
+  763  ls hadoop/etc/hadoop/
+  764  gedit hadoop/etc/hadoop/core-site.xml 
+  765  beeline   -u   jdbc:hive2://
+  766  start-all.sh 
+  767  hive --service hiveserver2
+  768  stop-all.sh 
+  769  start-all.sh 
+  770  hive --service hiveserver2
+  771  cd /etc/impacta/hive/lib/
+  772  mv log4j-slf4j-impl-2.6.2.jar log4j-slf4j-impl-2.6.2.jar.bk
+  773  hive --service hiveserver2
+  774  stop-all.sh 
+  775  start-all.sh 
+  776  hive --service hiveserver2
+  777  gedit /etc/profile.d/export.sh 
+  778  sudo gedit /etc/profile.d/export.sh 
+  779  stop-all.sh 
+  780  start-all.sh 
+  781  hive --service hiveserver2
+  782  stop-all.sh 
+  783  start-all.sh 
+  784  hive --service hiveserver2
+  785  hdfs dfs -ls /user/hive/warehouse
+  786  hue runserver
+  787  stop-all.sh 
+  788  cd /etc/impacta/
+  789  cd h
+  790  cd hue
+  791  ls
+  792  cd desktop/
+  793  ls
+  794  cd conf/
+  795  gedit hue.ini
+  796  start-hbase.sh 
+  797  userdel hue
+  798  sudo userdel hue
+  799  i dhue
+  800  id hue
+  801  exit
+  802  start-all.sh 
+  803  nohup hive --service hiveserver2 &
+  804  hive --service hiveserver2
+  805  hue runserver
+  806  stop-hbase.sh
+  807  stop-all.sh 
+  808  top
+  809  su -
+  810  exit
+  811  hue runserver
+  812  hdfs dfs -ls /
+  813  hadoop dfsadmin -safemode leave
+  814  beeline -u jdbc:hive2://
+  815  exit
+  816  start-all.sh 
+  817  hive --service hiveserver2
+  818  beeline -u jdbc:hive2//
+  819  hive
+  820  stop-all.sh 
+  821  start-all.sh 
+  822  hadoop dfsadmin -safemode leave
+  823  hadoop fsck /
+  824  hadoop fsck - delete /
+  825  hdfs fsck - delete /
+  826  hdfs fsck /
+  827  hdfs fsck -delete /
+  828  hdfs fsck /
+  829  stop-all.sh 
+  830  hdfs fsck /
+  831  start-all.sh 
+  832  hdfs dfs -ls /
+  833  hdfs dfs -ls /inputs
+  834  stop-all.sh 
+  835  ping globo.com
+  836  ifconfig
+  837  hue runserver
+  838  cd /etc/impacta/hue/
+  839  ls
+  840  cd desktop/
+  841  ls
+  842  cd conf/
+  843  clear
+  844  ls
+  845  gedit hue.ini
+  846  nano hue.ini
+  847  hue runserver
+  848  nano hue.ini
+  849  hue runserver
+  850  clear
+  851  hue runserver
+  852  nano hue.ini
+  853  hue runserver
+  854  nano hue.ini
+  855  exit
+  856  pwd
+  857  cd /etc/impacta/
+  858  pwd
+  859  clear
+  860  start-all.sh 
+  861  systemctl stop firewalld
+  862  systemctl status firewalld
+  863  hive --service hiveserver2
+  864  exit
+  865  yop
+  866  top
+  867  stop-all.sh 
+  868  exit
+  869  cd /etc/
+  870  ls
+  871  cd hado
+  872  cd impacta/
+  873  ls
+  874  cd hadoop/
+  875  cd etc/hadoop/
+  876  ls
+  877  sudo gedit core-site.xml 
+  878  sudo gedit hdfs-site.xml 
+  879  cd ..
+  880  sudo gedit /etc/profile.d/export.sh 
+  881  jps
+  882  start-dfs.sh
+  883  start-yarn.sh 
+  884  jps
+  885  sudo gedit /etc/profile.d/export.sh 
+  886  sudo nano /etc/profile.d/export.sh 
+  887  jps
+  888  supervisor
+  889  ls
+  890  pwd
+  891  cd /etc/impacta/
+  892  hue runserver
+  893  cd /etc/impacta/
+  894  sudo gedit hive/conf/hive-site.xml 
+  895  sudo gedit /etc/profile.d/export.sh 
+  896  ls
+  897  mv hue hue.bk
+  898  ls
+  899  rm -rf elton/
+  900  ls
+  901  ls -l /etc/impacta/sqoop/lib/
+  902  ls
+  903  sudo systemctl status firewalld
+  904  sudo systemctl stop firewalld
+  905  sudo systemctl status firewalld
+  906  sudo systemctl disable firewalld
+  907  sudo systemctl status firewalld
+  908  ls
+  909  tar -xvf hue-4.2.0\ \(2\).tgz 
+  910  ls
+  911  cd hue-4.2.0/
+  912  cd ..
+  913  mv hue-4.2.0 hue
+  914  ls
+  915  cd hue
+  916  make apps
+  917  ls
+  918  cd ..
+  919  ls
+  920  rm -rf hue
+  921  rm -rf hue-4.2.0\ \(2\).tgz 
+  922  ls
+  923  tar -xvf hue-4.2.0.tgz 
+  924  ls
+  925  cp hue-4.2.0 hue
+  926  cp -r hue-4.2.0 hue
+  927  ls
+  928  cd hue
+  929  ls
+  930  make apps
+  931  cd ..
+  932  start-all.sh 
+  933  hdfs fsck /
+  934  nohup hive --service hiveserver2 &
+  935  jps
+  936  nohup hive --service datastore &
+  937  jps
+  938  kill -9 29392
+  939  jps
+  940  hive --service hiveserver2
+  941  jps
+  942  stop-all.sh 
+  943  jps
+  944  exit
+  945  jps
+  946  beeline   -u   jdbc:hive2:// 
+  947  sudo gedit /etc/impacta/hive/conf/hive-site.xml 
+  948  jps
+  949  beeline -u jdbc:hive2://
+  950  start-all.sh 
+  951  jps
+  952  hive --service hiveserver2
+  953  jps
+  954  hive --service hiveserver2
+  955  jps
+  956  hive --service hiveserver2
+  957  jps
+  958  hdfs fsck /
+  959  exit
+  960  jps
+  961  beeline -u jdbc:hive2://
+  962  hive --service metastore
+  963  jps
+  964  beeline -u jdbc:hive2://
+  965  supervisor
+  966  sudo supervisor
+  967  hue runserver
+  968  supervisor
+  969  start-hbase.sh 
+  970  jps
+  971  ifconfig
+  972  stop-hbase.sh 
+  973  jps
+  974  start-all.sh 
+  975  jps
+  976  hive --service hiveserver2
+  977  jps
+  978  stop-all.
+  979  stop-all.sh 
+  980  jps
+  981  exit
+  982  jps
+  983  start-all.sh 
+  984  jps
+  985  stop-all.sh 
+  986  jps
+  987  exit
+  988  cd /etc/impacta/
+  989  ls
+  990  rm hue-4.2.0.tgz 
+  991  ls
+  992  rm hue.bk/
+  993  rm -rf hue.bk/
+  994  ls
+  995  rm -rf hue-4.2.0/
+  996  ls
+  997  cat nohup.out 
+  998  exit
+  999  sudo gedit /etc/impacta/hive/conf/hive-site.xml 
+ 1000  sudo gedit /etc/profile.d/export.sh 
+ 1001  cd Desktop/
+ 1002  history > Comandos.txt
