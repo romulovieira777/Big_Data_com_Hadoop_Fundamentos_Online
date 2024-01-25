@@ -6,6 +6,6 @@
 - [Aula 01 - Introdução ao Hadoop](https://github.com/romulovieira777/Big_Data_com_Hadoop_Fundamentos_Online/tree/main/Aula_01_Introducao_ao_Hadoop)
 - [Aula 02 - Hadoop Distributed File System](https://github.com/romulovieira777/Big_Data_com_Hadoop_Fundamentos_Online/tree/main/Aula_02_Hadoop_Distributed_File_System)
 - [Aula 03 - MapReduce](https://github.com/romulovieira777/Big_Data_com_Hadoop_Fundamentos_Online/tree/main/Aula_03_Mapreduce)
-- [Aula 04 - Hive]()
+- [Aula 04 - Hive](https://github.com/romulovieira777/Big_Data_com_Hadoop_Fundamentos_Online/tree/main/Aula_04_Hive)
 
 Link para o curso: [Impacta](https://impacta.com.br/cursos/big-data-com-hadoop-fundamentos-online)
