@@ -1,0 +1,33 @@
+show databases;
+
+create database treinamento;
+
+show databases;
+
+use treinamento;
+
+show tables;
+
+create table funcionarios(
+    id int,
+    nome string
+) partitioned by (data string) row format fields delimited by '|' stored as textfile;
+
+show tables;
+
+insert into table funcionarios partition(data='01082019') values(1, 'eduardo'), (2, 'Pedro'), (45, 'Maria');
+
+select * from funcionarios;
+
+show databases;
+
+use treinamento;
+
+create external table nyse_div(
+    bolsa string,
+    acao string,
+    data string,
+    dividendos float
+) row format delimited fields terminated by '\t' stored as textfile location '/treinamento/hive/nyse/dividendos';
+
+select * from nyse_div;
