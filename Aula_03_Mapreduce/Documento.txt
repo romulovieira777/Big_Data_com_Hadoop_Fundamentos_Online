@@ -1,0 +1,5 @@
+MapReduce
+https://pt.wikipedia.org/wiki/MapReduce
+
+Yarn
+https://pt.wikipedia.org/wiki/Apache_Hadoop#YARN
